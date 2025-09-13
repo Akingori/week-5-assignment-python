@@ -1,0 +1,20 @@
+class Vehicle:
+    def move(self):
+        raise NotImplementedError("Subclasses must implement this method")
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Bicycle(Vehicle):
+    def move(self):
+        print("Pedaling 🚲")
+
+class Airplane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+vehicles = [Car(), Bicycle(), Airplane()]
+
+for vehicle in vehicles:
+    vehicle.move()
