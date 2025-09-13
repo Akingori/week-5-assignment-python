@@ -1,9 +1,9 @@
 class BouncingCastle:
     def __init__(self, size, color, capacity):
-        self.size = size           # Size of the castle (Small, Medium, Large)
-        self.color = color         # Color of the castle
-        self.capacity = capacity   # Maximum number of people it can hold
-        self.current_inflation = 0 # Percentage of inflation (0% - 100%)
+        self.size = size           
+        self.color = color         
+        self.capacity = capacity   
+        self.current_inflation = 0 
 
     def inflate(self):
         if self.current_inflation < 100:
