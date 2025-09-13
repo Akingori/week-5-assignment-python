@@ -1,0 +1,26 @@
+class BouncingCastle:
+    def __init__(self, size, color, capacity):
+        self.size = size           # Size of the castle (Small, Medium, Large)
+        self.color = color         # Color of the castle
+        self.capacity = capacity   # Maximum number of people it can hold
+        self.current_inflation = 0 # Percentage of inflation (0% - 100%)
+
+    def inflate(self):
+        if self.current_inflation < 100:
+            self.current_inflation = 100
+            print(f"The {self.color} bouncing castle is now fully inflated!")
+        else:
+            print("The bouncing castle is already fully inflated.")
+
+    def deflate(self):
+        if self.current_inflation > 0:
+            self.current_inflation = 0
+            print(f"The {self.color} bouncing castle is now deflated.")
+        else:
+            print("The bouncing castle is already deflated.")
+
+    def status(self):
+        print(f"Castle Size: {self.size}")
+        print(f"Castle Color: {self.color}")
+        print(f"Max Capacity: {self.capacity} people")
+        print(f"Current Inflation: {self.current_inflation}%")
