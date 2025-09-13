@@ -1,0 +1,16 @@
+regular_castle = BouncingCastle("Medium", "Blue", 10)
+regular_castle.status()
+regular_castle.inflate()
+regular_castle.status()
+regular_castle.deflate()
+regular_castle.status()
+
+print("\n---\n")
+
+themed_castle = ThemedBouncingCastle("Large", "Pink", 20, "Princess")
+themed_castle.status()
+themed_castle.show_theme()
+themed_castle.inflate()
+themed_castle.status()
+themed_castle.deflate()
+themed_castle.status()
